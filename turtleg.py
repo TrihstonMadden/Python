@@ -1,18 +1,32 @@
-import turtle
+from turtle import *
 
-tris=turtle.Turtle()
-tris.speed(0)
-tris.color('red')
-turtle.bgcolor('black')
-rotate = int(360)
-def drawturtle(t,size):
-    for i in range(120):
-        turtle.turtle(size)
-        size=-4
-def drawSpecial(t,size,repeat):
-    for i in range(repeat):
-        drawturtle(t,size)
-        turtle.right(360/repeat)
-drawSpecial(t,100,10)
+
+speed(0)
+pencolor('red')
+bgcolor('black')
+x = 0
+up()
+rt(45)
+fd(90)
+rt(135)
+down()
+while x < 90:
+
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+
+    rt(33.1111)
+    x = x+1
+
 
 exitonclick()
