@@ -1,14 +1,33 @@
-import turtle
-t = turtle.Pen()
-turtle.bgcolor("black")
-t.color("red")
-t.speed(0)
-t.width(5)
-t.hideturtle()
-t.left(90)
-for x in range(180):
-    t.forward(1)
-    t.right(1)
-for x in range(180):
-    t.back(1)
-    t.right(1)
+from turtle import *
+
+speed(0)
+pencolor('red')
+bgcolor('black')
+
+x = 0
+up()
+
+rt(45)
+fd(90)
+rt(135)
+
+down()
+while x < 120:
+
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+    fd(200)
+    rt(61)
+
+    rt(11.1111)
+    x = x+1
+
+exitonclick()
