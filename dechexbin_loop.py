@@ -17,14 +17,14 @@ def hexcon(decimal):
 	else:
 		addasc = 48
 	remainder = str(chr((decimal % 16)+addasc))
-	# *******************************8
+	# ******************************************
 	if (decimal // 16>9):
 		addasc = 55
 	else:
 		addasc = 48
 	quotient = str(chr((decimal // 16)+addasc))
 	hex_str = quotient+remainder
-	#*************************************
+	#*******************************************
 	return hex_str
 	
 def main():
