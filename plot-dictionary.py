@@ -23,6 +23,7 @@ def main():
 	for h,k in table.items():  #get the items in the dictionary
 		print(h, k) # trace code
 		#x,y = table[n]
+		t.speed(.5)
 		t.penup()
 		t.goto(h,k)
 		t.pendown()
